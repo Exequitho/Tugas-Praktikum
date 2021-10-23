@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 3.2</title>
+</head>
+<body style="font-family: arial; padding: 50px; background-color: lightgray;">
+    <div class="container">
+     <div class="nav">
+         <ul style="border: 2px solid black; background-color: white;">
+             <li style="display: inline-block; list-style: none; margin: 10px; margin-right: 100px; margin-left: 50px;"><a href="#" style="text-decoration: none; color: black;">Home</a></li>
+             <li style="display: inline-block; list-style: none; margin-left: 20px; margin-right: 100px; margin-left: 50px;"><a href="#" style="text-decoration: none; color: black;">Generate Link</a></li>
+             <li style="display: inline-block; list-style: none; margin-left: 20px; margin-right: 100px; margin-left: 50px;"><a href="#" style="text-decoration: none; color: black;">Transaction History</a></li>
+             <li style="display: inline-block; list-style: none; margin-left: 20px; margin-right: 100px; margin-left: 50px;"><a href="#" style="text-decoration: none; color: black;">Policy</a></li>
+             <li style="display: inline-block; list-style: none; margin-left: 20px; margin-right: 100px; margin-left: 50px;"><a href="#" style="text-decoration: none; color: black;">Logout</a></li>
+         </ul>
+     </div>
+     <br>
+     <div class="content" style="display: inline-block;">
+        <form method="post"> 
+        <ul>
+            <li style="list-style: none; float: left; margin-top: -30x;">
+                <p><img src="opaqsqX.gif" alt="Upload Picture" width="300px"><br></p>
+                <input type="file" name="file" id="file" accept="image/*"><label for="file"></label>
+            </li>
+            <li style="list-style: none; margin-left: 200px; margin-top: 15px; display: inline-block">Title here : 
+            <input type="text" name="Name" id="User" style="margin-left: 200px; width: 310px;"></li>
+            
+            <li style="list-style: none; margin-left: 200px; margin-top: 15px; display: inline-block">Description : 
+            <textarea name="desc" id="desk" cols="40" rows="5" style="margin-left: 186px;"></textarea></li>
+
+            <li style="list-style: none; margin-left: 200px; margin-top: 15px; display: inline-block">Account Number : 
+            <input type="text" name="No" id="Nomor" style="margin-left: 147px; width: 310px;"></li>
+
+            <li style="list-style: none; margin-left: 200px; margin-top: 15px; display: inline-block">Bank : 
+            <input type="text" name="Banka" id="Banke" list="Bank" style="margin-left: 230px; width: 310px;">
+            <datalist id="Bank">
+                <option value="BCA"></option>
+                <option value="Mandiri"></option>
+                <option value="BNI"></option>
+                <option value="BRI"></option>
+            </datalist></li>
+            
+            <li style="list-style: none; margin-left: 200px; margin-top: 15px; display: inline-block">Account Holder :
+            <input type="text" name="hold" id="acc" style="margin-left: 157px; width: 310px;"></li>
+            
+            <li style="list-style: none; margin-left: 200px; margin-top: 15px; display: inline-block">Transaction :
+            <select name="trans" id="saction" style="margin-left: 184px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select><br><p style="font-size: small; margin-left: 280px;">* If the transaction is for 3 person, choose 3 from the dropdown list.</p></li>
+
+            <li style="list-style: none; margin-left: 480px; margin-top: 15px; color: green; display: inline-block"><input type="checkbox" name="check" id="Mphone">Send to Mobile Phone</li><br>
+            <li style="list-style: none; margin-left: 480px; margin-top: 15px; color: green; display: inline-block"><input type="checkbox" name="chuck" id="Mail">Send to Email</li>
+
+            <li style="list-style: none; margin-left: 500px; margin-top: 15px; display: inline-block">Send to Mobile Phone :
+            <input type="text" name="mobile phone" id="mobile p" style="margin-left: 110px; width: 308px;"></li>
+
+            <li style="list-style: none; margin-left: 500px; margin-top: 15px; display: inline-block">Send to Email :
+            <input type="text" name="send email" id="SE" style="margin-left: 168px; width: 308px;"></li>
+
+            <li style="list-style: none; margin-left: 782px; margin-top: 40px; display: inline-block"><button type="submit" style="color: white; background-color: green; width: 150%;">Generate Nabr Link</button></li>
+        </ul>
+        </form>
+     </div>
+     
+    </div>
+    
+</body>
+</html>

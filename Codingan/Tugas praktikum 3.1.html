@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pizza Order</title>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <form action="Tugas praktikum 3.1 thank u.html" method="post">
+        <table border="0" cellspacing="2" cellpadding="2">
+            <tr>
+                <td>
+                    <h3>Black Goose Bistro | Pizza-on-Demand</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver
+                        it within an hour</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Your Information</td>
+            </tr>
+            <br>
+            <tr>
+                <td><label for="Customername">Name </label><input type="text" name="customername" id="Customername"></td>
+            <br>
+            <tr>
+                <td><label for="Address">Adress </label><input type="text" name="address" id="Address"></td>
+            </tr>
+            <br>
+            <tr>
+                <td><label for="Telephone">Phone Number </label><input type="text" name="telephone" id="Telephone"></td>
+            </tr>
+            <br>
+            <tr>
+                <td><label for="Email">Email </label><input type="text" name="email" id="Email"></td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <p>Delivery Instruction</p> <textarea name="instruction" cols="40" rows="5" maxlength="400" minlength="3"
+                        placeholder="No more than 400 characters long"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Design Your Dream Pizza:</b></td>
+            </tr>
+            <tr>
+                <td>Pizza Specs</td>
+            </tr>
+            <tr>
+                <td>
+                    <dl>
+                        Crust (Choose one)
+                        <dt><input type="radio" id="ClassicWhite" name="crust"><label for="ClassicWhite">Classic
+                                White</label></dt>
+                        <dt><input type="radio" id="Multigrain" name="crust"><label
+                                for="Multigrain">Mulitgrain</label></dt>
+                        <dt><input type="radio" id="Cheese" name="crust"><label for="Cheese">Cheese-stuffed
+                                crust</label></dt>
+                        <dt><input type="radio" id="Gluten" name="crust"><label for="Gluten">Gluten-free</label></dt>
+                    </dl>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <dl>
+                        Toppings (Choose as many as you want)
+                        <dt><input type="checkbox" name="toppings" id="Red sauce" checked><label for="Red sauce">Red
+                                Sauce</label></dt>
+                        <dt><input type="Checkbox" name="toppings" id="White sauce"><label for="White sauce">White
+                                Sauce</label></dt>
+                        <dt><input type="Checkbox" name="toppings" id="Mozarella"><label for="Mozarella">Mozarella
+                                Cheese</label></dt>
+                        <dt><input type="Checkbox" name="toppings" id="Pepp"><label for="Pepp">Pepperoni</label></dt>
+                        <dt><input type="Checkbox" name="toppings" id="Mushrooms"><label for="Mushrooms">Mushrooms</label>
+                        </dt>
+                        <dt><input type="Checkbox" name="toppings" id="Pepper"><label for="Pepper">Peppers</label></dt>
+                        <dt><input type="Checkbox" name="toppings" id="Anch"><label for="Anch">Anchovies</label></dt>
+                    </dl>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <dl>
+                        Number <br>
+                        How many pizzas:
+                        <select name="number" id="Number" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </dl>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit">Bring me a pizza!</button> <button type="reset">Reset</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
