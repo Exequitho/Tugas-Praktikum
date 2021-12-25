@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1</title>
+    <style>
+        table tr {
+            background-color: rgb(199, 218, 253);
+        }
+        table td {
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Masukkan Nilai</td>
+            <td>Valas</td>
+            <td>Nilai Rupiah</td>
+        </tr>
+        <tr>
+            <td><input type="text" size="30" id="awal" placeholder="Masukkan Nilai"></td>
+            <td><select id="valas" onchange="hasil()">
+                <option value="">Pilih Valasnya</option>
+                <option value="Dollar US">Dollar US</option>
+                <option value="Dollar Singapore">Dollar Singapore</option>
+                <option value="Ringgit Malaysia">Ringgit Malaysia</option>
+                <option value="Yen Jepang">Yen Jepang</option>
+                <option value="Euro">Euro</option>
+                <option value="Riyal Arab Saudi">Riyal Arab Saudi</option>
+            </select></td>
+            <td><input type="text" size="30" id="akhir" placeholder="Hasilnya disini"></td>
+        </tr>
+    </table>
+
+    <script>
+        let valasList = ["Dollar US", "Dollar Singapore", "Ringgit Malaysia", "Yen Jepang", "Euro", "Riyal Arab Saudi"]
+        let nilaiAwal = document.getElementById("awal")
+        let valas = document.getElementById("valas")
+        let nilaiAkhir = document.getElementById("akhir")
+        let penampungHasil
+        let format = new Intl.NumberFormat("id-ID");
+
+
+        function hasil() {
+            if (valas.value==valasList[0]) {
+                penampungHasil = nilaiAwal.value*9915
+            } else if (valas.value==valasList[1]) {
+                penampungHasil = nilaiAwal.value*13472
+            } else if (valas.value==valasList[2]) {
+                penampungHasil = nilaiAwal.value*874
+            } else if (valas.value==valasList[3]) {
+                penampungHasil = nilaiAwal.value*120
+            } else if (valas.value==valasList[4]) {
+                penampungHasil = nilaiAwal.value*15888
+            } else if (valas.value==valasList[5]) {
+                penampungHasil = nilaiAwal.value*3592
+            } else {
+                penampungHasil = nilaiAwal.value*0
+            }
+            
+
+            nilaiAkhir.value = "Rp. " + format.format(penampungHasil)
+        }
+    </script>
+</body>
+</html>
